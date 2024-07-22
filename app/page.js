@@ -19,7 +19,7 @@ export default function Home() {
       {/* I used NavBar in layout.js because i want it to visible for all the children of app folder */}
       
       <div className="container">
-        <h1 className="heading">Welcome ! we server the Richest Coffee in the city !</h1>
+        <h1 className="heading">Welcome ! we serve the Richest Coffee in the city !</h1>
         <Image src={myCup} width={600} height={600} className="cupImage" alt="Cup Image" layout="responsive"></Image>
       </div>
       
