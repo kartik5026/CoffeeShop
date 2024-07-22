@@ -14,7 +14,7 @@ export default function Home() {
   const Croissant = "https://websitedemos.net/coffee-shop-04/wp-content/uploads/sites/727/2020/11/croissant-01-free-img.png"
   return (
     <>
-      
+      <title>Coffee Shop<title/>
       {/* <NavBar /> */}
       {/* I used NavBar in layout.js because i want it to visible for all the children of app folder */}
       
