@@ -1,33 +1,190 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@media(max-width:1200px){
+  .navItem{
+    display: flex;
+    flex-wrap: wrap;
   }
+  .cardItem{
+   
+    font-size: 10px;
+  }
+  
 }
 
+
+@media(max-width:600px){
+
+  
+  
+  .navItem{
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .cardItem{
+   
+    font-size: 5px;
+  }
+  .footer{
+    font-size: 10px;
+  }
+  .btn{
+    width: 40px;
+    font-size: 5px;
+    
+  }
+ 
+}
+
+
+.heading{
+  justify-content: center;
+  display: flex;
+  margin-top: 50px;
+  
+}
+a:hover{
+  color: #F5DEB3;
+  background-color: #8B4513;
+}
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: white;
+  background: linear-gradient(to right, #8B5531, #A4774B);
+  font-family: 'Courier New', Courier, monospace;
+  
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+.container div{
+  flex: 1;
+  margin:0px 10px;
+}
+
+#card1{
+  background: linear-gradient(to top right, #bc713e, #e4b07b);
+}
+
+#card2{
+
+  background: linear-gradient(to top right,#5A8E7E,#e4b07b);
+
+}
+#card3{
+  background: linear-gradient(to top right,#2A2321,#3a3736);
+}
+.card {
+  padding: 10px;
+  /* background-color: burlywood; */
+  
+  border-radius: 15px;
+}
+
+.heroCard {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
+
+.orders{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.orderItem{
+  width: 200px;
+  flex:1 0 21%;
+  /* border: 2px black solid; */
+  margin:10px 10px;
+}
+
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+.menuCard{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.menuItem{
+  flex: 0 0 21%;
+}
+
+.footer{
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
+.galleryDiv{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  margin-top: 100px;
+}
+/* because i used layout responsive in Image tag In Gallery so it will become responsive */
+.galleryItem{
+  flex:0 0 30%;
+  padding: 10px 10px;
+}
+.galleryImg{
+  border-radius: 5%;
+  
+
+}
+
+
+/* .contact-form{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+} */
+
+.contactDiv{
+  display: flex;
+  
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contactDiv > div{
+  flex:0 0 300px;
+}
+.input{
+  width: 20vw;
+  margin: 5px;
+  padding: 20px;
+}
+
+.btn{
+  width: 10vw;
+  margin:5px;
+  padding: 10px;
+}
+.btn:hover{
+  color: white;
+  background-color: #A4774B;
 }
